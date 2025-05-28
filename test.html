@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Store | Honda, Toyota & More</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .car-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .car-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .car-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    .price {
+      color: green;
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Honda Civic",
+    "image": [
+      "https://raw.githubusercontent.com/fahamali7/structure-data-images/main/hondaCivic.jpg",
+      "https://raw.githubusercontent.com/fahamali7/structure-data-images/main/hondaCivic-front.jpg",
+      "https://raw.githubusercontent.com/fahamali7/structure-data-images/main/hondaCivic-back.jpg"
+    ],
+    "url": "https://www.example.com/honda-civic",
+    "description": "The Honda Civic is a compact car known for its reliability and fuel efficiency.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Honda"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "John Doe"
+      },
+      "reviewBody": "The Honda Civic is an excellent car with great performance and comfort."
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "123"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.example.com/honda-civic",
+      "priceCurrency": "INR",
+      "price": "250000",
+      "priceValidUntil": "2025-12-31",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "CarStore"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to CarStore</h1>
+    <p>Explore our collection of top-rated vehicles</p>
+  </header>
+
+  <div class="container">
+    <div class="car-card">
+      <img src="https://raw.githubusercontent.com/fahamali7/structure-data-images/main/hondaCivic.jpg" alt="Honda Civic">
+      <img src="https://raw.githubusercontent.com/fahamali7/structure-data-images/main/hondaCivic-front.jpg" alt="Honda Civic Front">
+      <img src="https://raw.githubusercontent.com/fahamali7/structure-data-images/main/hondaCivic-back.jpg" alt="Honda Civic Back">
+      <div class="car-title">Honda Civic 2024</div>
+      <div class="price">₹2,50,000</div>
+    </div>
+  </div>
+</body>
+</html>
